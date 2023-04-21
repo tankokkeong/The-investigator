@@ -30,7 +30,7 @@ function App() {
   
     get(child(dbRef, `Scene1`)).then((snapshot) => {
       if (snapshot.exists()) {
-        console.log(snapshot.val());
+        // console.log(snapshot.val());
 
         const newStory = (
           <div id="storyline-container">
@@ -69,7 +69,7 @@ function App() {
   const chooseOption = (scene) =>{
     get(child(dbRef, scene)).then((snapshot) => {
       if (snapshot.exists()) {
-        console.log(snapshot.val());
+        // console.log(snapshot.val());
 
         const newStory = (
           <div id="storyline-container">
